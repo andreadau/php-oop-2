@@ -13,7 +13,7 @@ class Comment extends User {
      */
 
     public function setUser(){
-        $this->autore = $this->username;
+        $this->author = $this->username;
     }
 
 }
