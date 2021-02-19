@@ -15,13 +15,15 @@ include "db.php";
 </head>
 <body>
     <div id="users">
-            <?php foreach ($users as $user) {?>
+            <?php foreach ($profiles as $profile) {?>
                 <div class="user">
-                    <p class="name">Nome : <?php echo $user->name ?></p>
-                    <p class="surname">Surname : <?php echo $user->surname ?></p>
-                    <p class="userName">Username: <?php echo $user->username ?></p>
-                    <p class="email">Email: <?php echo $user->email ?></p>
-                    <p class="password">Password: <?php echo $user->password?></p>
+                    <p class="userName">Username: <?php echo $profile->username ?></p>
+                    <p class="email">Email: <?php echo $profile->email ?></p>
+                    <p class="password">Password: <?php echo $profile->password?></p>
+                    <p class="name">Nome : <?php echo $profile->name ?></p>
+                    <p class="surname">Surname : <?php echo $profile->surname ?></p>
+                    <p class="dob">Date of birth: <?php echo $profile->dob ?></p>
+                    <p class="genre">Genre: <?php echo $profile->genre ?></p>
                     <br>
                 </div>
             <?php }?>

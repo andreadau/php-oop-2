@@ -1,19 +1,17 @@
 <?php
-class Comment extends User {
+class Comment {
     public $title;
     public $content;
     public $create_time;
     public $author;
 
-    /**
-     * Get the Author of the post from the User setUser function
-     * @param string $uservname Nome dell'autore dell'articolo
-     * @return string
-     * Polimorphism
-     */
+    public function __construct(string $title, string $content, string $create_time, string $author) {
+ 
+        $this->title = $title;
+        $this->content = $content;
+        $this->create_time = $create_time;
+        $this->author = $author;
 
-    public function setUser(){
-        $this->autore = $this->username;
     }
 
 }
