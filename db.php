@@ -1,8 +1,6 @@
 <?php
 // USER DB INCLUDED AND STORED
 include './classes/user.php';
-// Comment DB 
-include './classes/comment.php';
 // Post DB 
 include './classes/post.php';
 $posts = [
